@@ -64,8 +64,6 @@ async def execute_query(script: str = Form(...)):
 
             return data
 
-            # return [row for row in result]
-
     except (Exception, psycopg2.Error) as error:
         return {"message": error}
 
