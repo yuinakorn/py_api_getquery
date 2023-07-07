@@ -1,0 +1,9 @@
+version: '3'
+services:
+  main:
+    image: 'py_api_ihims_gunicorn:latest'
+    ports:
+      - '8081:8000'
+    volumes:
+      - './:/app'
+    restart: 'unless-stopped'
